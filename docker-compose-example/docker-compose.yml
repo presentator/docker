@@ -22,7 +22,7 @@ services:
       - MYSQL_PASSWORD=presentator
 
   presentator:
-    image: ganigeorgiev/presentator
+    image: ganigeorgiev/presentator:latest
     depends_on:
       - mariadb
     restart: always
