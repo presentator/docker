@@ -22,8 +22,7 @@ services:
       - MYSQL_PASSWORD=presentator
 
   presentator:
-    build:
-      context: ./../
+    image: ganigeorgiev/presentator
     depends_on:
       - mariadb
     restart: always
