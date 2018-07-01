@@ -1,4 +1,4 @@
-(WIP): Presentator Docker image for production [![Latest Release](https://img.shields.io/github/release/ganigeorgiev/presentator-docker.svg)](https://github.com/ganigeorgiev/presentator-docker/releases)
+Presentator Docker image for production [![Latest Release](https://img.shields.io/github/release/ganigeorgiev/presentator-docker.svg)](https://github.com/ganigeorgiev/presentator-docker/releases)
 ======================================================================
 
 This repo provides a `Dockerfile` to quickly build and set-up a production ready Docker image for [Presentator](https://github.com/ganigeorgiev/presentator).
