@@ -13,4 +13,4 @@ You could find an example deployment set-up with `docker-compose.yml` file in th
 - `ganigeorgiev/presentator:latest`
 - `ganigeorgiev/presentator:1.9`, `ganigeorgiev/presentator:1.9.0`
 
-> The tag versions corresponded to the actual [release versions of Presentator](https://github.com/ganigeorgiev/presentator/releases).
+> The tag versions correspond to the actual [release versions of Presentator](https://github.com/ganigeorgiev/presentator/releases).
