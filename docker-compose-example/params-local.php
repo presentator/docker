@@ -7,10 +7,10 @@ return [
     'publicUrl' => 'http://app.presentator.local',
 
     // !!! insert a secret key in the following (if it is empty) - this is required for User validation
-    'activationSalt' => 'a06a77ce12624b9207abe1cfc39a559f',
+    'activationSalt' => '', // eg. a06a77ce12624b9207abe1cfc39a559f
 
     // !!! insert a secret key in the following (if it is empty) - this is required for API User authentication
-    'apiUserSecretKey' => '652P_PqYpXY2o0FJC18YgBQn6zIeTqDP',
+    'apiUserSecretKey' => '', // eg. 652P_PqYpXY2o0FJC18YgBQn6zIeTqDP
 
     // service email addresses
     'noreplyEmail' => 'no-reply@example.com',
