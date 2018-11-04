@@ -27,7 +27,7 @@ RUN chown -R www-data:www-data /var/www \
     && usermod -G staff www-data
 
 # download the latest archive
-RUN curl https://github.com/ganigeorgiev/presentator/releases/download/v1.11.3/v1.11.3.zip -L -o presentator.zip \
+RUN curl https://github.com/ganigeorgiev/presentator/releases/download/v1.12.0/v1.12.0.zip -L -o presentator.zip \
     && unzip presentator.zip -d /var/www/html \
     && rm presentator.zip
 
