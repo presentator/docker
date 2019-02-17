@@ -5,8 +5,8 @@ Here you can find an example `docker-compose.yml` configuration that makes use o
 
 The set-up contains the following containers:
 
-- **`jwilder/nginx-proxy`** - reversy proxy for easier vhosts management
-- **`mariadb`** - MariaDB v10 datatabase
+- **`jwilder/nginx-proxy`** - reverse proxy for easier vhosts management
+- **`mariadb`** - MariaDB v10 database
 - **`presentator`** - the application itself
 
 
@@ -28,4 +28,4 @@ The set-up contains the following containers:
 
 That's it! You should be able to access the specified vhosts in your browser.
 
-> A more detailed instructions about how to run the setup on vps hostings like DigitalOcean or Vultr is comming soon.
+> A more detailed instructions about how to run the setup on vps hostings like DigitalOcean or Vultr is coming soon.
