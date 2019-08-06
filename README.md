@@ -11,6 +11,7 @@ You could find an example deployment set-up with `docker-compose.yml` file in th
 ## Available versions
 
 - `ganigeorgiev/presentator:latest`
+- `ganigeorgiev/presentator:2.0.2`, `ganigeorgiev/presentator:2.0.1`, `ganigeorgiev/presentator:2.0.0`
 - `ganigeorgiev/presentator:1.13.2`, `ganigeorgiev/presentator:1.13.1`, `ganigeorgiev/presentator:1.13.0`, `ganigeorgiev/presentator:1.13`
 - `ganigeorgiev/presentator:1.12.0`, `ganigeorgiev/presentator:1.12`
 - `ganigeorgiev/presentator:1.11.3`, `ganigeorgiev/presentator:1.11.2`, `ganigeorgiev/presentator:1.11.1`, `ganigeorgiev/presentator:1.11.0`, `ganigeorgiev/presentator:1.11`
