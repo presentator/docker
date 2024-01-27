@@ -1,19 +1,36 @@
-Presentator Docker image for production
+Presentator Dockerfile
 ======================================================================
 
-This repo provides a `Dockerfile` to quickly build and set-up a production ready Docker image for [Presentator](https://github.com/presentator/presentator).
+> [!TIP]
+> Presentator v3 is [distributed as a single static binary](https://github.com/presentator/presentator/releases) and you may not need Docker.
 
-- [Versions](#versions)
-- [Quick start](#quick-start)
-- [Upgrade from v1](#upgrade-from-v1)
+This repo provides a sample `Dockerfile` (linux/amd64) for [Presentator v3](https://github.com/presentator/presentator).
 
-> **This repository is READ-ONLY.**
-> **Report issues and send pull requests in the [main Presentator repository](https://github.com/presentator/presentator/issues).**
+- [Configurations](#configurations)
+- [Docker Hub images](#docker-hub-images)
+- [Upgrade from v2](#upgrade-from-v2)
 
 
-## Versions
+## Configurations
 
-- `ganigeorgiev/presentator:latest`, `ganigeorgiev/presentator:2`
+The image exposes the application server on port `8080`.
+
+The Presentator executable is located at `/pr/presentator`.
+
+By default the following volume mounting point(s) are available:
+
+- `/pr/pb_data` - (**required**) app DB data and storage files
+- `/pr/pb_hooks` - (optional) custom app JS hooks (see [PocketBase - Extend with JS](https://pocketbase.io/docs/js-overview/))
+- `/pr/pb_migrations` - (optional) custom app JS migrations (see [PocketBase - Extend with JS](https://pocketbase.io/docs/js-overview/))
+
+
+## Docker Hub images
+
+> [!NOTE]
+> The tags correspond to the [release versions of Presentator](https://github.com/presentator/presentator/releases).
+
+- `ganigeorgiev/presentator:latest`, `ganigeorgiev/presentator:3`
+- `ganigeorgiev/presentator:3.0`, `ganigeorgiev/presentator:3.0.0`,
 - `ganigeorgiev/presentator:2.15`, `ganigeorgiev/presentator:2.15.1`, `ganigeorgiev/presentator:2.15.0`
 - `ganigeorgiev/presentator:2.14`, `ganigeorgiev/presentator:2.14.0`
 - `ganigeorgiev/presentator:2.13`, `ganigeorgiev/presentator:2.13.1`, `ganigeorgiev/presentator:2.13.0`
@@ -36,23 +53,8 @@ This repo provides a `Dockerfile` to quickly build and set-up a production ready
 - `ganigeorgiev/presentator:1.10`, `ganigeorgiev/presentator:1.10.0`
 - `ganigeorgiev/presentator:1.9`, `ganigeorgiev/presentator:1.9.1`, `ganigeorgiev/presentator:1.9.0`
 
-> The tag versions correspond to the actual [release versions of Presentator](https://github.com/presentator/presentator/releases).
 
+## Upgrade from v2
 
-## Quick start
-> If you are looking for a development Docker set-up, plase check the [main Presentator repository](https://github.com/presentator/presentator).
-
-You could find an example deployment set-up with `docker-compose.yml` file in the [/docker-compose-example](https://github.com/presentator/presentator-docker/tree/master/docker-compose-example) directory.
-
-Configurations are managed by simple mounting volumes to your container.
-For most users, the following mounting points will need to be defined:
-
-- `/var/www/html/web/storage` - indicates where your app storage files will be saved
-- `/var/www/html/config/spa.json` - SPA configurations ([list with all options](https://github.com/presentator/presentator-spa/blob/master/.env))
-- `/var/www/html/config/base-local.php` - API base configurations - `db`, `mailer`, etc.
-- `/var/www/html/config/params-local.php` - API parameters - secret keys, urls, tokens duration, etc. ([list with all parameters](https://github.com/presentator/presentator-api/blob/master/config/params.php))
-
-
-## Upgrade from v1
-Presentator v2 comes with a lot of new features and has some breaking changes (including files and directory structure).
-If you have previously installed Presentator v1, make sure to check the [upgrade instructions](https://github.com/presentator/presentator/blob/master/UPGRADE.md).
+Presentator v3 comes with a lot of new features and has some breaking changes (including files and db structure).
+If you have previously installed Presentator v2, make sure to check the [`v2tov3migrate` instructions](https://github.com/presentator/v2tov3migrate).
