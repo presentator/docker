@@ -30,7 +30,7 @@ By default the following volume mounting point(s) are available:
 > The tags correspond to the [release versions of Presentator](https://github.com/presentator/presentator/releases).
 
 - `ganigeorgiev/presentator:latest`, `ganigeorgiev/presentator:3`
-- `ganigeorgiev/presentator:3.2`, `ganigeorgiev/presentator:3.2.3`, `ganigeorgiev/presentator:3.2.2`, `ganigeorgiev/presentator:3.2.1`, `ganigeorgiev/presentator:3.2.0`
+- `ganigeorgiev/presentator:3.2`, `ganigeorgiev/presentator:3.2.4`, `ganigeorgiev/presentator:3.2.3`, `ganigeorgiev/presentator:3.2.2`, `ganigeorgiev/presentator:3.2.1`, `ganigeorgiev/presentator:3.2.0`
 - `ganigeorgiev/presentator:3.1`, `ganigeorgiev/presentator:3.1.1`, `ganigeorgiev/presentator:3.1.0`
 - `ganigeorgiev/presentator:3.0`, `ganigeorgiev/presentator:3.0.0`
 - `ganigeorgiev/presentator:2.15`, `ganigeorgiev/presentator:2.15.1`, `ganigeorgiev/presentator:2.15.0`
