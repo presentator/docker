@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ARG PR_VERSION=3.3.0
+ARG PR_VERSION=3.3.1
 
 RUN apk add --no-cache \
     unzip \
